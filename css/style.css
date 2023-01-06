@@ -31,6 +31,9 @@ a {
 .btn {
   padding: 10px 20px;
 }
+span {
+  color: var(--red);
+}
 /* navbar section  */
 .header {
   background: var(--bg);
@@ -64,9 +67,6 @@ a {
   text-align: center;
   color: var(--white);
 }
-.banner .banner-info h1 span {
-  color: var(--red);
-}
 .banner .banner-info p {
   color: var(--white);
   text-align: center;
@@ -87,3 +87,9 @@ a {
   margin-left: 30px;
 }
 /* service section  */
+.service .container {
+  padding: 50px;
+  background: url(../asset/image/footer-bg.png),
+    linear-gradient(rgba(0, 0, 0, 0, 1), rgba(0, 0, 0, 0.2));
+  background-blend-mode: overlay;
+}
