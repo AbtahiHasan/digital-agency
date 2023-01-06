@@ -1,0 +1,89 @@
+/* very important code  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  /* colors  */
+  --white: #ffffff;
+  --bg: #d5d2d2;
+  --black: #111111;
+  --red: #d44646;
+}
+/* common css  */
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  padding: 10px 20px;
+}
+/* navbar section  */
+.header {
+  background: var(--bg);
+}
+.header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg);
+  padding: 10px 0;
+}
+.navbar .navlinks ul li {
+  padding-right: 20px;
+}
+.navbar .navlinks ul li a {
+  color: var(--black);
+}
+/* banner section  */
+.banner {
+  background-image: url(../asset/image/background.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-blend-mode: overlay;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .banner-info h1 {
+  font-size: 80px;
+  text-align: center;
+  color: var(--white);
+}
+.banner .banner-info h1 span {
+  color: var(--red);
+}
+.banner .banner-info p {
+  color: var(--white);
+  text-align: center;
+  padding: 10px 200px;
+}
+.banner-info .banner-btns {
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.banner-info .banner-btns .btn:first-child {
+  background: var(--red);
+  color: var(--white);
+}
+.banner-info .banner-btns .btn:last-child {
+  background: var(--white);
+  color: var(--black);
+  margin-left: 30px;
+}
+/* service section  */
