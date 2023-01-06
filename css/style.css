@@ -7,6 +7,8 @@
   font-family: "Poppins", sans-serif;
 }
 :root {
+  /* shadow  */
+  --shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.2);
   /* colors  */
   --white: #ffffff;
   --bg: #d5d2d2;
@@ -225,4 +227,36 @@ span {
   border-radius: 25px;
   color: var(--black);
   text-align: center;
+}
+/* blog section  */
+.blog {
+  margin-top: 100px;
+}
+.blog .container h2 {
+  font-size: 60px;
+  text-align: center;
+}
+.blog .container p {
+  text-align: center;
+}
+.blog .blog-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 50px;
+}
+.blog .blog-card .card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.blog .blog-card .card img {
+  width: 100%;
+}
+.blog .blog-card .card h3 {
+  padding: 10px;
+}
+.blog .blog-card .card p {
+  padding: 10px;
+  text-align: left;
 }
