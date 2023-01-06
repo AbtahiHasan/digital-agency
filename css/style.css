@@ -12,6 +12,7 @@
   --bg: #d5d2d2;
   --black: #111111;
   --red: #d44646;
+  --yellow: #f2aa4cff;
 }
 /* common css  */
 .container {
@@ -88,7 +89,7 @@ span {
 }
 /* service section  */
 .service {
-  padding: 50px;
+  padding: 50px 50px 200px;
   background-image: url(../asset/image/footer-bg.png),
     linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
   background-repeat: no-repeat;
@@ -176,4 +177,52 @@ span {
 .service .info-card .card h3 {
   font-size: 16px;
   margin-top: 10px;
+}
+/* apointment section  */
+.apointment {
+  position: relative;
+}
+.apointment .container {
+  background: var(--yellow);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -70px;
+  border-radius: 15px;
+}
+.apointment .phone {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.apointment .phone img {
+  height: 40px;
+  width: 40px;
+}
+.apointment .phone p {
+  color: var(--white);
+}
+.apointment .phone h4 {
+  color: var(--white);
+  font-size: 22px;
+}
+.apointment .apointment-about {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+}
+.apointment .apointment-btn {
+  display: flex;
+  align-items: center;
+}
+.apointment .apointment-btn a {
+  background: var(--white);
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: var(--black);
+  text-align: center;
 }
