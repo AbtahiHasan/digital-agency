@@ -87,9 +87,93 @@ span {
   margin-left: 30px;
 }
 /* service section  */
-.service .container {
+.service {
   padding: 50px;
-  background: url(../asset/image/footer-bg.png),
-    linear-gradient(rgba(0, 0, 0, 0, 1), rgba(0, 0, 0, 0.2));
+  background-image: url(../asset/image/footer-bg.png),
+    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
+  background-repeat: no-repeat;
   background-blend-mode: overlay;
+}
+.service .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.service .info {
+  margin-right: 30px;
+}
+.service .info .button a {
+  background: var(--white);
+  color: var(--black);
+  border-radius: 25px;
+}
+.service .info h2 {
+  color: var(--white);
+  margin-top: 20px;
+}
+.service .info p {
+  color: var(--white);
+  margin-top: 30px;
+}
+.service .info ol.list {
+  list-style-type: upper-roman;
+  margin-top: 30px;
+}
+.service .info ol.list li {
+  color: var(--white);
+  display: block;
+}
+.service .info .about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.service .info .about .image-container {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.service .info .about .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.service .info .about .more-details-btn {
+  position: relative;
+}
+.service .info .about .more-details-btn::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: -50px;
+  background: var(--red);
+  width: 2px;
+  height: 110px;
+}
+.service .info .about .more-details-btn a {
+  background: var(--white);
+  color: var(--red);
+  border-radius: 25px;
+}
+.service .info-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.service .info-card .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  background: var(--white);
+  border-radius: 10px;
+}
+.service .info-card .card img {
+  width: 80px;
+  height: 80px;
+}
+.service .info-card .card h3 {
+  font-size: 16px;
+  margin-top: 10px;
 }
